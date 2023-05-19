@@ -90,4 +90,8 @@ abstract class Animal {
 
     public abstract void getMood();
     public abstract void sayHello();
+
+    public abstract String getName();
+
+    public abstract void setName(String petName);
 }
