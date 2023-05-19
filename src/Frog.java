@@ -1,8 +1,8 @@
-import threeAnimals.Land;
-import threeAnimals.getWater;
+import animalInterfaces.Land;
+import animalInterfaces.getWater;
 
 public class Frog  extends  Animal implements Land, getWater {
-
+    public String petName;
     public int Mood;
     public  boolean isAmphibian;
     public Frog(boolean mammal, boolean carnivorous, int mood) {
@@ -55,6 +55,21 @@ public class Frog  extends  Animal implements Land, getWater {
     @Override
     public boolean doesLayEggs() {
         return true;
+    }
+
+    @Override
+    public String getName() {
+        if (petName == null) {
+            System.out.println("Pet have yet to receive a name!");
+            return null;
+        }
+        return petName;
+    }
+
+    @Override
+    public void setName(String petName) {
+
+        this.petName = petName;
     }
 
 

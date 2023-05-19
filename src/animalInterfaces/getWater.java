@@ -1,4 +1,4 @@
-package threeAnimals;
+package animalInterfaces;
 
 public interface getWater {
 

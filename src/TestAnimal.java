@@ -22,13 +22,16 @@ public class TestAnimal {
         System.out.println(myDog.isCarnivorous());
         myDog.makeCarnivorous(false);
         System.out.println(myDog.isCarnivorous());
-
+        System.out.println();
         Frog myFrog = new Frog(false,false,0);
         myFrog.getMood();
         System.out.println(myFrog.isAmphibian());
+        System.out.println(myFrog);
 
-        //System.out.println("Do frogs have gills? " + myCat.doesLayEggs());
-        //System.out.println("Do frogs lay eggs? " + myCat.hasGills());
+        myFrog.setName("Ribbioti");
+        System.out.println(myFrog.getName());
+        System.out.println("Do frogs have gills? " + myFrog.doesLayEggs());
+        System.out.println("Do frogs lay eggs? " + myFrog.hasGills());
 
     }
 }

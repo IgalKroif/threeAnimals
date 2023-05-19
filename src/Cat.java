@@ -1,4 +1,4 @@
-import threeAnimals.Land;
+import animalInterfaces.Land;
 
 
 //ONLY FOR FROG IMPLEMENTATION!
@@ -14,6 +14,7 @@ import threeAnimals.Land;
 //}
 
 public class Cat extends Animal implements Land {
+    public String petName;
     public int Mood;
     Animal isSleeping;
     public Cat(boolean mammal, boolean carnivorous, int Mood) {
@@ -37,6 +38,16 @@ public class Cat extends Animal implements Land {
     @Override
     public void sayHello() {
         System.out.println("The animal greets you : ~MEOW~");
+    }
+
+    @Override
+    public String getName() {
+        return petName;
+    }
+
+    @Override
+    public void setName(String petName) {
+        this.petName = petName;
     }
 
     @Override

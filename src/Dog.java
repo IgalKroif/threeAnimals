@@ -1,8 +1,9 @@
-import threeAnimals.Land;
+import animalInterfaces.Land;
 
 public class Dog extends Animal implements Land {
-
+    public String petName;
     public int Mood;
+
     public Dog(boolean mammal, boolean carnivorous, int mood) {
         super(mammal, carnivorous, mood);
         this.mammal = mammal;
@@ -25,6 +26,16 @@ public class Dog extends Animal implements Land {
 
         System.out.println("The animal greets you : ~WAGS HIS TAIL~");
         }
+
+    @Override
+    public String getName() {
+        return petName;
+    }
+
+    @Override
+    public void setName(String petName) {
+        this.petName = petName;
+    }
 
     @Override
     public int getNumOfLegs() {
