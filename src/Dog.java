@@ -2,13 +2,22 @@ import animalInterfaces.Land;
 
 public class Dog extends Animal implements Land {
     public String petName;
-    public int Mood;
+    protected int Mood;
 
     public Dog(boolean mammal, boolean carnivorous, int mood) {
         super(mammal, carnivorous, mood);
         this.mammal = mammal;
         this.carnivorous = carnivorous;
         this.Mood = mood;
+    }
+
+    public void animalSleeping() {
+        if (isSleeping) {
+            isSleeping();
+        }
+    }
+    public void animalSleep() {
+        setSleeping(true);
     }
 
     @Override

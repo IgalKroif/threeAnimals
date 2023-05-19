@@ -15,14 +15,22 @@ import animalInterfaces.Land;
 
 public class Cat extends Animal implements Land {
     public String petName;
-    public int Mood;
-    Animal isSleeping;
+    protected int Mood;
     public Cat(boolean mammal, boolean carnivorous, int Mood) {
         super(mammal, carnivorous, Mood);
         this.carnivorous = carnivorous;
         this.mammal = mammal;
         this.Mood = mood;
 
+    }
+
+    public void animalSleeping() {
+        if (isSleeping) {
+            isSleeping();
+        }
+    }
+    public void animalSleep() {
+        setSleeping(true);
     }
 
     @Override

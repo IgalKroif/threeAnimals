@@ -32,6 +32,9 @@ public class TestAnimal {
         System.out.println(myFrog.getName());
         System.out.println("Do frogs have gills? " + myFrog.doesLayEggs());
         System.out.println("Do frogs lay eggs? " + myFrog.hasGills());
+        //System.out.println(myFrog.isSleeping);
+        myFrog.setSleeping(true);
+        System.out.println(myFrog.isSleeping());
 
     }
 }

@@ -23,9 +23,9 @@ enum Mood {
 abstract class Animal {
     public boolean mammal;
     public boolean carnivorous;
-    public int mood;
+    protected int mood;
 
-    public boolean isSleeping;
+    protected boolean isSleeping;
 
     public String isSleeping() {
         if (isSleeping) {
