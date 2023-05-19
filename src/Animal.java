@@ -4,7 +4,7 @@ enum Mood {
     SCARED(1);
 
 
-    int value;
+    public int value;
 
     Mood(int value) {
         this.value = value;
