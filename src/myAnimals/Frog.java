@@ -1,3 +1,5 @@
+package myAnimals;
+
 import animalInterfaces.Land;
 import animalInterfaces.getWater;
 
@@ -29,7 +31,7 @@ public class Frog  extends  Animal implements Land, getWater {
     @Override
     public void getMood() {
         if (Mood == 0) {
-            System.out.println("The Frog is is in a good Mood: ~Quack Quack~");
+            System.out.println("The myAnimals.Frog is is in a good Mood: ~Quack Quack~");
 
         } else if (Mood == 1) {
             System.out.println("You've scared the frog! : ~*Plops into the water*~");

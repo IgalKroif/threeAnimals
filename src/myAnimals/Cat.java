@@ -1,14 +1,29 @@
+package myAnimals;
+
 import animalInterfaces.Land;
 
-public class Dog extends Animal implements Land {
+
+//ONLY FOR FROG IMPLEMENTATION!
+//    @Override
+//    public boolean hasGills() {
+//        return false;
+//    }
+//
+//    @Override
+//    public boolean doesLayEggs() {
+//        return false;
+
+//}
+
+public class Cat extends Animal implements Land {
     public String petName;
     protected int Mood;
-
-    public Dog(boolean mammal, boolean carnivorous, int mood) {
-        super(mammal, carnivorous, mood);
-        this.mammal = mammal;
+    public Cat(boolean mammal, boolean carnivorous, int Mood) {
+        super(mammal, carnivorous, Mood);
         this.carnivorous = carnivorous;
+        this.mammal = mammal;
         this.Mood = mood;
+
     }
 
     public void animalSleeping() {
@@ -23,18 +38,17 @@ public class Dog extends Animal implements Land {
     @Override
     public void getMood() {
         if (Mood == 0) {
-            System.out.println("The dog is comfortable being touched: ~BARKS LOUDLY~");
+            System.out.println("The cat is happy: ~Purrr Purr~");
 
         } else if (Mood == 1) {
-            System.out.println("You've angered the dog: ~*MAKES A WHOOPING SOUND*~");
+            System.out.println("You've angered the cat: HISSSSSS!!!");
         }
     }
 
     @Override
     public void sayHello() {
-
-        System.out.println("The animal greets you : ~WAGS HIS TAIL~");
-        }
+        System.out.println("The animal greets you : ~MEOW~");
+    }
 
     @Override
     public String getName() {
@@ -51,3 +65,13 @@ public class Dog extends Animal implements Land {
         return 4;
     }
 }
+
+
+
+
+
+
+
+
+
+

@@ -1,25 +1,5 @@
-enum Mood {
+package myAnimals;
 
-    GOOD_MOOD(0),
-    SCARED(1);
-
-
-    public int value;
-
-    Mood(int value) {
-        this.value = value;
-    }
-
-    public int getValue() {
-        return value;
-    }
-
-    public int setValue(int value) {
-        this.value = value;
-        return value;
-    }
-
-}
 abstract class Animal {
     public boolean mammal;
     public boolean carnivorous;
@@ -44,10 +24,10 @@ abstract class Animal {
         this.mammal = mammal;
         this.carnivorous = carnivorous;
 
-        if (this.mood == Mood.GOOD_MOOD.getValue()) {
+        if (this.mood == AnimalMoods.GOOD_MOOD.getValue()) {
             this.mood = mood;
 
-        } else if (this.mood == Mood.SCARED.getValue()) {
+        } else if (this.mood == AnimalMoods.SCARED.getValue()) {
             this.mood = mood;
 
         }else {
@@ -81,7 +61,7 @@ abstract class Animal {
 
     @Override
     public String toString() {
-        return "Animal{" +
+        return "myAnimals.Animal{" +
                 "mammal=" + mammal +
                 ", carnivorous=" + carnivorous +
                 ", mood=" + mood +
