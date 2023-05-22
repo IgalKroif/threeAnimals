@@ -4,11 +4,21 @@ import myAnimals.Cat;
 import myAnimals.Dog;
 import myAnimals.Frog;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+/**
+ * The {@code TestAnimal} class is used to test the behavior and functionality of the animal classes.
+ * It creates instances of {@link myAnimals.Cat}, {@link myAnimals.Dog}, and {@link myAnimals.Frog}
+ * and invokes various methods to demonstrate their behavior.
+ */
 public class TestAnimal {
+
+    /**
+     * The main method is the entry point of the program.
+     * It creates instances of animal classes, invokes methods, and prints the results.
+     *
+     * @param args command-line arguments (unused)
+     */
     public static void main(String[] args) {
-        Cat myCat = new Cat(true,true,1);
+        Cat myCat = new Cat(true, true, 1);
         myCat.getMood();
         System.out.println(myCat.isMammal());
         System.out.println(myCat.getNumOfLegs());
@@ -17,7 +27,7 @@ public class TestAnimal {
         myCat.sayHello(2);
 
         System.out.println();
-        Dog myDog = new Dog(true,true,0);
+        Dog myDog = new Dog(true, true, 0);
         myDog.getMood();
         myDog.sayHello(3);
         System.out.println();
@@ -29,7 +39,7 @@ public class TestAnimal {
         myDog.makeCarnivorous(false);
         System.out.println(myDog.isCarnivorous());
         System.out.println();
-        Frog myFrog = new Frog(false,false,0);
+        Frog myFrog = new Frog(false, false, 0);
         myFrog.getMood();
         System.out.println(myFrog.isAmphibian());
         System.out.println(myFrog);
@@ -56,6 +66,5 @@ public class TestAnimal {
         myFrog.getMood();
         myFrog.setMood(1);
         myFrog.getMood();
-
     }
 }
