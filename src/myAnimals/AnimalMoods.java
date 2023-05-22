@@ -8,7 +8,7 @@ public enum AnimalMoods {
 
         public int value;
 
-        Mood(int value) {
+        AnimalMoods(int value) {
             this.value = value;
         }
 
@@ -22,4 +22,4 @@ public enum AnimalMoods {
         }
 
     }
-}
+
