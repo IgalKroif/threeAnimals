@@ -1,4 +1,8 @@
-package myAnimals;
+package animalTesting;
+
+import myAnimals.Cat;
+import myAnimals.Dog;
+import myAnimals.Frog;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
@@ -12,7 +16,7 @@ public class TestAnimal {
         System.out.println(myCat.isMammal());
         myCat.sayHello(2);
 
-
+        System.out.println();
         Dog myDog = new Dog(true,true,0);
         myDog.getMood();
         myDog.sayHello(3);
@@ -34,9 +38,24 @@ public class TestAnimal {
         System.out.println(myFrog.getName());
         System.out.println("Do frogs have gills? " + myFrog.doesLayEggs());
         System.out.println("Do frogs lay eggs? " + myFrog.hasGills());
-        //System.out.println(myFrog.isSleeping);
         myFrog.setSleeping(true);
         System.out.println(myFrog.isSleeping());
+
+        System.out.println();
+        myCat.setMood(0);
+        myCat.getMood();
+        myCat.setMood(1);
+        myCat.getMood();
+        System.out.println();
+        myDog.setMood(0);
+        myDog.getMood();
+        myDog.setMood(1);
+        myDog.getMood();
+
+        myFrog.setMood(0);
+        myFrog.getMood();
+        myFrog.setMood(1);
+        myFrog.getMood();
 
     }
 }
